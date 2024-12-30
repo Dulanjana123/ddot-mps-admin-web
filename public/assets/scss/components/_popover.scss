@@ -1,0 +1,59 @@
+/**=====================
+  2.23 Popover CSS Start
+==========================**/
+.popover-header {
+  background-color: $dark-color;
+  color: $white;
+}
+
+.popover-listItem {
+  color: $theme-font-color;
+}
+
+.popover-icon {
+  height: 18px;
+  width: 18px;
+}
+
+.popover-listItem:hover {
+  color: $primary-color;
+}
+
+.popover-list-divider {
+  border-color: $primary-color;
+}
+
+.popover-main {
+  .btn-showcase {
+    a {
+      color: $white;
+    }
+
+    button {
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.helper-text {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 100%;
+  font-size: 14px;
+
+  .p {
+    display: contents;
+    cursor: pointer;
+  }
+
+  .helper-text-icon {
+    cursor: pointer;
+  }
+}
+
+/**=====================
+  2.23 Popover CSS Ends
+==========================**/

@@ -1,0 +1,18 @@
+export const FormValidationErrors = {
+  FirstNameRequired: 'First name is required.',
+  LastNameRequired: 'Last name is required.',
+  EmailRequired: 'Email address is required.',
+  InvalidEmail: 'Invalid email address.',
+  PrefferedLanguageRequired: 'Preferred language is required.',
+  PasswordLengthRequired: 'Password must contain at least 8 characters.',
+  PasswordRequired: 'Password is required.',
+  InvalidPassword: 'Invalid password.',
+  ConfirmPasswordRequired: 'Confirm password is required.',
+  PasswordMismatch: 'Passwords do not match.',
+  PhoneRequired: 'Phone number is required.',
+  PhoneInvalid: 'Invalid phone number.',
+  MaxCharacterLenghtExceeded: 'Exceeds character limit. Maximum is 50 characters.',
+  MaxCharacterLenghtExceededEmail: 'Exceeds character limit. Maximum is 100 characters.',
+  MaxCharacterLenghtExceededPassword: 'Exceeds character limit. Maximum is 64 characters.',
+  WeekPassword: 'Your password is not strong enough.',
+};

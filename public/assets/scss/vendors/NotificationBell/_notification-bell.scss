@@ -1,0 +1,64 @@
+.notification-bell {
+  position: relative;
+
+  .icon-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #000; /* Set bell icon color to black */
+
+    &:focus {
+      outline: none;
+    }
+
+    i.fa-bell {
+      position: relative;
+    }
+  }
+
+  .badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0.75rem;
+  }
+
+  .dropdown-menu {
+    min-width: 300px;
+
+    p {
+      margin: 0;
+      font-size: 0.85rem;
+    }
+  }
+
+  .notification-content {
+    display: flex;
+    flex-direction: column;
+
+    .notification-type {
+      font-weight: bold;
+      margin-bottom: 5px; /* Add space between type and title */
+    }
+
+    .notification-title {
+      margin-bottom: 3px; /* Add space between title and body */
+    }
+  }
+
+  .notification-unread {
+    background-color: #f5f5f5; /* Highlight unread notifications */
+  }
+
+  .notification-read {
+    background-color: #fff; /* Read notifications have a plain white background */
+  }
+
+  .dropdown-item {
+    padding: 10px; /* Add padding for better spacing */
+  }
+
+  .dropdown-divider {
+    margin: 0; /* Adjust margins if necessary */
+  }
+}

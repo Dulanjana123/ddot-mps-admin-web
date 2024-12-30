@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - NODE_ENV=${NODE_ENV}
+    image: ddot-mps-admin-web-image
+    container_name: ddot-mps-admin-web-container
+    ports:
+      - '3000:3000'
+    environment:
+      - NODE_ENV=${NODE_ENV}
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm run start:development

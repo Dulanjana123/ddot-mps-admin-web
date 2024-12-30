@@ -1,0 +1,92 @@
+.wizard-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wizard-bar {
+  background-color: #eeebeb;
+  border-radius: 50px;
+}
+
+.wizard-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.wizard-nav-item {
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+
+.wizard-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  position: relative;
+  background-color: transparent;
+}
+
+.wizard-step-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #17375e;
+  position: relative;
+  z-index: 5;
+}
+
+.wizard-step.active .wizard-step-circle {
+  background-color: #17375e;
+  color: #fff;
+  border: 1px;
+}
+
+.wizard-nav-item:not(:last-child) .wizard-step::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 100%;
+  border-top: 1px dashed #17375e;
+}
+
+.wizard-step.active {
+  border: none;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: transparent;
+}
+
+.wizard-step-label {
+  font-size: 0.8rem;
+}
+
+.progressbar-col {
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+}
+
+.progressbar-container {
+  width: 70px;
+  height: 70px;
+}
+
+.progressbar-label {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}

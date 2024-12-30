@@ -1,0 +1,91 @@
+.tab-panel {
+  @media (max-width: 575.98px) {
+    margin-top: 1rem;
+  }
+}
+
+.ewr-text-key {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.ewr-text-value {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+#popup-key-text {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 1px;
+}
+
+#popup-value-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 0.5rem;
+}
+
+#popup-heading-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 1px;
+}
+
+#popup-heading {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px;
+  margin-bottom: 3px;
+}
+
+#popup-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#view-request-btn {
+  padding: 8px 15px;
+  background-color: #293E6B;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+}
+
+#popup-header-section {
+  background-color: #dde4f5;
+  padding: 1rem 0.5rem;
+  border: 1px solid #7994d3;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.esri-features__container {
+  overflow-y: auto;
+}
+
+.master-detail-panel {
+  background-color: rgba(231, 241, 255, 1);
+}
+
+.master-detail-panel-file-section {
+  max-height: 250px;
+  overflow-y: auto;
+  gap: 4px
+}

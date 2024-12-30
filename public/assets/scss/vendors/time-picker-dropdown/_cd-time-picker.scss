@@ -1,0 +1,16 @@
+.cd-time-picker {
+   .cd-time-picker-dropdown {
+      .cd-time-picker-menu {
+         width: 100%;
+         max-height: 200px;
+         border: 1px solid $dropdown-border-color;
+
+         .cd-time-picker-item {
+            font-size: 14px;
+            &:hover {
+               background-color: $light-primary;
+            }
+         }
+      }
+   }
+}

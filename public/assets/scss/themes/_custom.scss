@@ -1,0 +1,39 @@
+/**=====================
+ custom CSS Start
+==========================**/
+// you can add your custom css here
+
+@import '../utils/variables';
+
+/**** Note ****/
+/* Use this file for default theme level styling changes (eg: overide default bootstrap colors with our own color palette). 
+You can find default bootstrap variables in "node_modules/bootstrap/scss/_varibales.scss".*/
+
+/*** Do not change the order ***/
+
+// Import Bootstrap's functions and variables
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+
+// Define custom colors here
+$custom-colors: (
+  // MPS main color palette
+  "mps-primary":    $mps-primary,
+  "mps-secondary":  $mps-secondary,
+  "mps-success":    $mps-success,
+  "mps-info":       $info,
+  "mps-warning":    $warning,
+  "mps-danger":     $mps-danger,
+  "mps-light":      $light,
+  "mps-dark":       $dark,
+
+  //MPS soft color palette
+  "mps-soft-secondary":  $mps-soft-secondary,
+  "mps-soft-success":    $mps-soft-success,
+  "mps-soft-info":       $mps-soft-info,
+  "mps-soft-warning":    $mps-soft-warning,
+  "mps-soft-danger":     $mps-soft-danger,
+);
+
+// Merge the custom colors with the existing theme colors
+$theme-colors: map-merge($theme-colors, $custom-colors);
